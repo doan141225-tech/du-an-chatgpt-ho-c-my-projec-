@@ -1,22 +1,15 @@
-# Tâm An Windows1.2 — bản gộp giọng, nhạc và quản trị
+# Tâm An Windows 1.3 — link HTTPS cho TikTok LIVE Studio
 
-## Chạy và cập nhật
-1. Tải Tam-An-Windows.zip bằng nút Download raw file.
-2. Đóng cửa sổ đen và sân khấu của bản cũ; giải nén toàn bộ bản mới vào thư mục mới.
-3. Mở Khoi-dong.bat, giữ cửa sổ đó trong lúc live.
-4. Âm thanh: Giọng đọc & nhạc → Giống file mẫu.
-5. Nghi lễ/nội dung: Quản trị nâng cao → chỉnh theo ý → Lưu toàn bộ.
+1. Tải `Tam-An-Windows.zip` qua Download raw file.
+2. Đóng cửa sổ khởi động bản cũ, giải nén toàn bộ ZIP vào thư mục mới, mở `Khoi-dong.bat`.
+3. Trên trang điều khiển, chọn **Link LIVE Studio → Tạo link HTTPS**.
+4. Đợi **SẴN SÀNG**, bấm **Sao chép link HTTPS**.
+5. Trong TikTok LIVE Studio: **Thêm nguồn → Liên kết**, dán link mới, bật âm thanh, độ phân giải **1080 × 1920**, luôn giữ hoạt động, rồi bấm **Thêm nguồn / Áp dụng**.
 
-## Đã gộp trong một bản
-- Cùng bộ giọng Microsoft Edge Nam Minh như file tham chiếu, pitch−18Hz, thông báo/quà−20%, bình luận−10%; có Hoài My và bộ đọc dự phòng.
-- Hai bản MP3 gốc của file người dùng cung cấp, tự chuyển bài, crossfade và hạ nhạc khi đọc; chuông, mõ, tụng kinh và âm lượng/tốc độ chỉnh riêng.
-- Admin chỉnh tốc độ đi lên/về chỗ, thời gian dâng hương, số lạy0–108, thời gian mỗi lạy và độ cúi. Mỗi lượt giữ cấu hình lúc xếp hàng.
-- Sửa kho lời chúc, mẫu cảm ơn/chào/bình luận, sáu nhóm mong cầu và nội dung tụng kinh; ngẫu nhiên hoặc đọc tuần tự.
-- Chỉnh giao diện, nhân vật, camera, hiệu ứng, ngưỡng tim, thời gian mưa sen và điểmTOP.
-- Lưu/đồng bộ sanglive, xuất/nhậpJSON và PINquản trị tùy chọn. Bộ tải không có PINhoặc dữ liệu riêng của người dùng.
+Giữ chương trình và Internet chạy trong lúc live. Link tạm có thể đổi khi khởi động lại; hãy chép link mới vào nguồn. Không cần tài khoản Cloudflare hoặc mua tên miền. Chỉ sân khấu được đưa lên HTTPS; API quản trị và PIN vẫn ở máy bạn. Ai có link có thể xem sân khấu. Nút **Dừng link** thu hồi link.
 
-Giọng Edge cần Internet và dịch vụMicrosoft hoạt động. Cloud bị CONNECT403 nên chưa xác minh được âm thanh neural thật tại đây. Windows dùng mạng của máy người dùng; khi chuyển sang giọng dự phòng, giao diện báo rõ. NhạcMP3 và chuông/mõ hoạt động ngoại tuyến.
+Bản này giữ toàn bộ giọng đọc, nhạc và quản trị của bản 1.2: giọng Edge Nam Minh/Hoài My, hai bản nhạc nền tham chiếu, chuông/mõ/tụng kinh, lời chúc, số lạy, tốc độ đi lên/về chỗ, camera/hiệu ứng, sao lưu cấu hình và PIN tùy chọn. Có thể xuất cấu hình từ bản cũ rồi nhập vào bản mới. ZIP không chứa PIN hoặc cài đặt riêng.
 
-Đã qua21kiểm thử logic, kiểm traUI/âm thanh, nghi lễ2lạy thực tế, xuất/nhập cấu hình và PINHTTP/UI trên bảnproduction Linux. Chưa thực thi trực tiếp trên Windows thật.
+Bộ Cloudflare chính thức phiên bản 2026.10.7 có sẵn, được kiểm tra SHA256 trước khi chạy; giấy phép và thông tin nguồn được kèm trong ZIP. Node.js và eSpeak Windows cũng được kèm đầy đủ cùng giấy phép.
 
-Giấy phép/nguồn gốc Node, eSpeak và nhạc tham chiếu (MIT,©2026KentJuno) được kèm trongZIP.
+Đã qua 26 kiểm thử logic; kiểm tra trình duyệt cho nguồn phát có đường dẫn riêng, tài nguyên/ảnh/nhạc/giọng cục bộ, WebSocket, nghi lễ hai lạy và chặn các API quản trị trên link phát. Các thao tác tạo/sao chép/dừng link đã được kiểm tra với phản hồi Windows mô phỏng; bộ production được chạy thử bằng Node Linux. Chưa thực thi trực tiếp trên Windows, tạo Quick Tunnel thật hoặc xác nhận trên TikTok LIVE Studio. Dịch vụ mạng Cloudflare/Microsoft/TikTok cần hoạt động trên mạng của máy người dùng.
